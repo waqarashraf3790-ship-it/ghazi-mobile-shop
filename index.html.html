@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ghazi Mobile Shop | Multan</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f7f6;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    background:#111827;
+    color:white;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:27px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#22c55e;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+nav a:hover{
+    color:#22c55e;
+}
+
+/* HERO */
+
+.hero{
+    min-height:580px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+
+    background:
+    linear-gradient(rgba(17,24,39,.85),rgba(17,24,39,.85)),
+    linear-gradient(135deg,#16a34a,#111827);
+    
+    color:white;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#22c55e;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+    color:#e5e7eb;
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+    background:#16a34a;
+    color:white;
+    padding:14px 25px;
+    margin:6px;
+    border-radius:7px;
+    text-decoration:none;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#15803d;
+}
+
+.dark-btn{
+    background:#374151;
+}
+
+.whatsapp{
+    background:#25d366;
+}
+
+/* SECTIONS */
+
+section{
+    padding:80px 7%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:45px;
+}
+
+.section-title span{
+    color:#16a34a;
+}
+
+/* CARDS */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:270px;
+    padding:30px 22px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:55px;
+    margin-bottom:18px;
+}
+
+.card h3{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+}
+
+/* MOBILE PRODUCTS */
+
+.product{
+    background:white;
+    width:270px;
+    padding:28px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.phone{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.product h3{
+    font-size:21px;
+    margin-bottom:10px;
+}
+
+.product p{
+    color:#666;
+}
+
+.price{
+    color:#16a34a;
+    font-size:22px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+/* ABOUT */
+
+.about{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:45px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.about p{
+    line-height:1.9;
+    color:#555;
+    margin:15px 0;
+}
+
+.owner{
+    background:#dcfce7;
+    padding:25px;
+    margin-top:25px;
+    border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+    max-width:750px;
+    margin:auto;
+    background:white;
+    padding:45px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.contact p{
+    margin:18px 0;
+    line-height:1.7;
+}
+
+.contact a{
+    color:#16a34a;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer p{
+    margin:7px;
+}
+
+/* MOBILE */
+
+@media(max-width:750px){
+
+    header{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px 7px;
+        font-size:13px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .about,
+    .contact{
+        padding:30px 20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+Ghazi <span>Mobile Shop</span>
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#mobiles">Mobiles</a>
+
+<a href="#services">Services</a>
+
+<a href="#offers">Offers</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>
+Welcome to <span>Ghazi Mobile Shop</span>
+</h1>
+
+<p>
+New & Old Mobile Phones • Accessories • EasyPaisa • JazzCash • Easyload
+</p>
+
+<a href="#mobiles" class="btn">
+📱 View Mobiles
+</a>
+
+<a href="#contact" class="btn dark-btn">
+📞 Contact Us
+</a>
+
+</div>
+
+</section>
+
+
+<!-- MOBILES -->
+
+<section id="mobiles">
+
+<h2 class="section-title">
+Our <span>Mobile Phones</span>
+</h2>
+
+<div class="cards">
+
+
+<div class="product">
+
+<div class="phone">📱</div>
+
+<h3>Samsung Galaxy</h3>
+
+<p>Latest Samsung Smartphone</p>
+
+<div class="price">
+Rs. 85,000
+</div>
+
+<a href="#contact" class="btn">
+Buy Now
+</a>
+
+</div>
+
+
+<div class="product">
+
+<div class="phone">📱</div>
+
+<h3>iPhone</h3>
+
+<p>Latest Apple Smartphone</p>
+
+<div class="price">
+Rs. 150,000
+</div>
+
+<a href="#contact" class="btn">
+Buy Now
+</a>
+
+</div>
+
+
+<div class="product">
+
+<div class="phone">📱</div>
+
+<h3>Infinix</h3>
+
+<p>Powerful & Affordable</p>
+
+<div class="price">
+Rs. 45,000
+</div>
+
+<a href="#contact" class="btn">
+Buy Now
+</a>
+
+</div>
+
+
+<div class="product">
+
+<div class="phone">📱</div>
+
+<h3>Oppo</h3>
+
+<p>Modern Smartphone</p>
+
+<div class="price">
+Rs. 60,000
+</div>
+
+<a href="#contact" class="btn">
+Buy Now
+</a>
+
+</div>
+
+
+<div class="product">
+
+<div class="phone">📱</div>
+
+<h3>Vivo</h3>
+
+<p>Latest Vivo Smartphone</p>
+
+<div class="price">
+Rs. 55,000
+</div>
+
+<a href="#contact" class="btn">
+Buy Now
+</a>
+
+</div>
+
+
+<div class="product">
+
+<div class="phone">📱</div>
+
+<h3>Redmi</h3>
+
+<p>Affordable Smartphone</p>
+
+<div class="price">
+Rs. 40,000
+</div>
+
+<a href="#contact" class="btn">
+Buy Now
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="section-title">
+Our <span>Services</span>
+</h2>
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon">💳</div>
+
+<h3>EasyPaisa</h3>
+
+<p>
+EasyPaisa money transfer and payment services.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💰</div>
+
+<h3>JazzCash</h3>
+
+<p>
+JazzCash transfer and payment services.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📲</div>
+
+<h3>Easyload</h3>
+
+<p>
+Mobile balance and load services.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">♻️</div>
+
+<h3>Old Mobiles</h3>
+
+<p>
+Buy and sell used mobile phones.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎧</div>
+
+<h3>Accessories</h3>
+
+<p>
+Chargers, covers, handsfree and more.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h3>Downloading</h3>
+
+<p>
+Apps, software and downloading services.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- OFFERS -->
+
+<section id="offers">
+
+<h2 class="section-title">
+🔥 Special <span>Offers</span>
+</h2>
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon">📱</div>
+
+<h3>New Mobiles</h3>
+
+<p>
+Latest smartphones available at reasonable prices.
+</p>
+
+<a href="#contact" class="btn">
+Contact Us
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">♻️</div>
+
+<h3>Used Mobiles</h3>
+
+<p>
+Buy and sell used mobile phones at competitive prices.
+</p>
+
+<a href="#contact" class="btn">
+Contact Us
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎧</div>
+
+<h3>Accessories</h3>
+
+<p>
+Special prices on selected mobile accessories.
+</p>
+
+<a href="#contact" class="btn">
+Contact Us
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">
+About <span>Us</span>
+</h2>
+
+<div class="about">
+
+<h2>Welcome to Ghazi Mobile Shop</h2>
+
+<p>
+Ghazi Mobile Shop is located on Duniya Pur Road,
+near Southern Bypass, Multan.
+</p>
+
+<p>
+We deal in new and used mobile phones,
+mobile accessories and digital services.
+</p>
+
+<p>
+Our services include EasyPaisa, JazzCash,
+Easyload, downloading and mobile phone
+buying and selling.
+</p>
+
+
+<div class="owner">
+
+<h3>Shop Owner</h3>
+
+<p>
+<strong>Mahar Salman Siyal</strong>
+</p>
+
+<p>
+📞 0304-5355376
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+Contact <span>Us</span>
+</h2>
+
+<div class="contact">
+
+<h2>📱 Ghazi Mobile Shop</h2>
+
+<p>
+👤 <strong>Owner:</strong>
+Mahar Salman Siyal
+</p>
+
+<p>
+📞 <strong>Phone:</strong>
+<a href="tel:03045355376">
+0304-5355376
+</a>
+</p>
+
+<p>
+📧 <strong>Email:</strong>
+<a href="mailto:salmang120@gmail.com">
+salmang120@gmail.com
+</a>
+</p>
+
+<p>
+📍 <strong>Address:</strong><br>
+Duniya Pur Road, Near Southern Bypass, Multan
+</p>
+
+<br>
+
+<a href="tel:03045355376" class="btn">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/923045355376" class="btn whatsapp">
+💬 WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Ghazi Mobile Shop - Multan
+</p>
+
+<p>
+Mahar Salman Siyal | 0304-5355376
+</p>
+
+</footer>
+
+
+</body>
+</html>
